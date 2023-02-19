@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="stylesheet" href="./src/styless-navbar.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar_wrap">
+          <a href="#" class="logo-a" id="logo">Afdl</a>
+          <ul class="menu" id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Benefits</a></li>
+            <li><a href="#">Prices</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Content</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="hamb">
+        <div class="hamb_field" id="hamb">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+    <div class="popup" id="popup">
+      <ul class="menu" id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Benefits</a></li>
+        <li><a href="#">Prices</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Content</a></li>
+      </ul>
+    </div>
+
+    <canvas id="canvas3d"></canvas>
+
+    <!-- <div class="background-img">
+      <img
+        id="background-img"
+        src="https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=434&q=80"
+        alt="oops"
+      />
+    </div> -->
+
+    <!-- Import maps polyfill -->
+    <!-- Remove this when import maps will be widely supported -->
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"
+    ></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.218/build/runtime.js"
+        }
+      }
+    </script>
+    <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/navbar.js"></script>
+  </body>
+</html>
